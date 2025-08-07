@@ -40,7 +40,7 @@ applyBtn.addEventListener("click", () => {
   else if (inputCupon.value === "SELL200") {
     const discount = totalPrice * 0.2;
     const totalWithDiscount = totalPrice - discount;
-    discountTk.innerText = discount;
+    discountTk.innerText = discount.toFixed(2);
     discountTotal.innerText = totalWithDiscount;
   } else {
     alert("Coupon dosn't match");
